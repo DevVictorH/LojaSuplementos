@@ -24,6 +24,10 @@
 <br>
 <input type="text" id="cpf">
 <br>
+<label for=dataNasc>Data de nascimento</label>
+<br>
+<input id="date" type="date" />
+<br>
 <label for"senha">Senha</label>
 <br>
 <input type="password" id="senha">
