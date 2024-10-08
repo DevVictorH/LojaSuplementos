@@ -4,37 +4,32 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="../css/cadastro.css">
 <title>Cadastro do Cliente</title>
 </head>
 <body>
 
-<h1>Cadastro Cliente</h1>
+
 
 <form action="">
 
-<label for"nome">Nome Completo</label>
-<br>
-<input type="text" id="nome">
-<br>
-<label for"email">Email</label>
-<br>
-<input type="text" id="email">
-<br>
-<label for"cpf">CPF</label>
-<br>
-<input type="text" id="cpf">
-<br>
-<label for=dataNasc>Data de nascimento</label>
-<br>
-<input id="date" type="date" />
-<br>
-<label for"senha">Senha</label>
-<br>
-<input type="password" id="senha">
-<br>
-<input type="submit" value="Cadastrar">
-<a href="../index.jsp"><button type="button" >Voltar para Página Inicial</button></a>
-
+<div>
+	<h1>Cadastro Cliente</h1>
+	<input type="text" id="nome" placeholder="Nome Completo">
+	<br><br>
+	<input type="text" id="email" placeholder="Email">
+	<br><br>
+	<input type="text" id="cpf" placeholder="CPF">
+	<br><br>
+	<label for=dataNasc>Data de nascimento</label>
+	<br>
+	<input id="date" type="date" />
+	<br><br>
+	<input type="password" id="senha" placeholder="Senha">
+	<br><br>
+	<input class="btn-cadastrar" type="submit" value="Cadastrar">
+	<a href="../index.jsp"><button type="button" >Voltar para Página Inicial</button></a>
+</div>
 
 
 </form>
