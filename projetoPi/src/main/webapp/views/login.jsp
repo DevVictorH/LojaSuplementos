@@ -9,7 +9,36 @@
 </head>
 <body>
 
-	<div>
+<header>
+        <div class="top-header">
+            <div class="logo">
+                <a href="#"><img src="../img/Logo pi.png" alt="Logo"></a>
+            </div>
+            <div class="barra-pesquisa">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit"><img src="../img/Lupa.png" width="25px"></button>
+            </div>
+
+            <div class="Login">
+                <p>
+                    <a class="logar" href="#">Login</a>
+                    |
+                    <a class="cadastrar" href="#">Cadastre-se</a>
+                </p>
+            </div>
+        </div>
+        <nav class="itens">
+            <ul>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Creatina</a></li>
+                <li><a href="#">Whey </a></li>
+                <li><a href="#">Pré Treino</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+	<form class="formLogin">
 		<h1>Login</h1>
 		<input type="text" id="email" placeholder="Email"> 
 		<br><br> 
@@ -17,6 +46,6 @@
 		<br><br> 
 		<button type="button">Entrar</button>
 		<a href="#">Esqueci minha senha</a>
-	</div>
+	</form>
 </body>
 </html>

@@ -95,7 +95,8 @@ header {
 	color: #174c77;
 }
 
-.formLogin {
+/* Formulario Manutenção Cliente */
+.formCliente {
 	background-color: #001834; /* Cor de fundo do formulário */
 	padding: 40px;
 	border-radius: 8px;
@@ -112,7 +113,11 @@ h1 {
 	color: white;
 }
 
-input, button {
+label {
+	color: white;
+}
+
+label, input, button {
 	display: block;
 	width: 100%;
 	margin-bottom: 15px;
@@ -125,7 +130,7 @@ input {
 }
 
 button {
-	padding: 5px;
+	padding: 10px;
 	background-color: #000000;
 	color: #fff;
 	border: none;
@@ -133,13 +138,12 @@ button {
 	cursor: pointer;
 }
 
-a{
-	text-decoration: none;
+button:hover {
+	background-color: #174c77;
+	transition: 0.5s;
+	opacity: 0.8;
 }
 
-.formLogin a{
-	color: white;
+.alterarDados {
+	margin-top: 35px;
 }
-
-
-
