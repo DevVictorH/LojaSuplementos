@@ -95,6 +95,8 @@ header {
 	color: #174c77;
 }
 
+
+
 .formLogin {
 	background-color: #001834; /* Cor de fundo do formulário */
 	padding: 40px;
@@ -122,15 +124,19 @@ input {
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
+	margin-bottom: 6px;
 }
 
 button {
-	padding: 5px;
+	padding: 10px;
 	background-color: #000000;
 	color: #fff;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+	width: 150px;
+	float: left;
+	margin-right: 18px;
 }
 
 a{
@@ -141,5 +147,17 @@ a{
 	color: white;
 }
 
+button:hover {
+    background-color: #174c77;
+	transition: 0.7;
+}
 
+.entrar:hover{
+	transition: 0.7s;
+}
+
+.esqueci-senha{
+	display: flex;
+	margin-top: 5px;
+}
 

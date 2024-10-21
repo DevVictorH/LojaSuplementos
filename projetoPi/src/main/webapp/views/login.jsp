@@ -44,8 +44,8 @@
 		<br><br> 
 		<input type="password" id="senha" placeholder="Senha">
 		<br><br> 
-		<button type="button">Entrar</button>
-		<a href="#">Esqueci minha senha</a>
+		<button class="entrar" type="button">Entrar</button>
+		<a class="esqueci-senha" href="#">Esqueci minha senha</a>
 	</form>
 </body>
 </html>
