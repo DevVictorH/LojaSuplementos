@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +9,8 @@
 <title>Página Inicial</title>
 </head>
 <body>
+
+        
 
 <header>
         <div class="top-header">
@@ -36,6 +39,8 @@
             </ul>
         </nav>
     </header>
+    
+     
 
     <!-- Slider -->
     <div class="slider">

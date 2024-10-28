@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@page import="utils.ConnectionFactory"%>
+<%@ page import="java.sql.Connection, java.sql.Statement, java.sql.ResultSet" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,15 +39,16 @@
         </nav>
     </header>
 
-
+    
 	<form class="formLogin">
 		<h1>Login</h1>
-		<input type="text" id="email" placeholder="Email"> 
+		<input type="text" name="email" id="email" placeholder="Email"> 
 		<br><br> 
-		<input type="password" id="senha" placeholder="Senha">
+		<input type="password" name="senha" id="senha" placeholder="Senha">
 		<br><br> 
 		<button class="entrar" type="button">Entrar</button>
 		<a class="esqueci-senha" href="#">Esqueci minha senha</a>
 	</form>
+
 </body>
 </html>
