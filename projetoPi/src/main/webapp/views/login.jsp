@@ -40,9 +40,9 @@
     </header>
 
     
-	<form class="formLogin">
+	<form class="formLogin" action="" method="post">
 		<h1>Login</h1>
-		<input type="text" name="email" id="email" placeholder="Email"> 
+		<input type="email" name="email" id="email" placeholder="Email"> 
 		<br><br> 
 		<input type="password" name="senha" id="senha" placeholder="Senha">
 		<br><br> 

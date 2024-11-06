@@ -12,7 +12,7 @@
  <header>
         <div class="top-header">
             <div class="logo">
-                <a href="#"><img src="../img/Logo pi.png" alt="Logo"></a>
+                <a href="../index.jsp"><img src="../img/Logo pi.png" alt="Logo"></a>
             </div>
             <div class="barra-pesquisa">
                 <input type="text" placeholder="Pesquisar...">
@@ -37,17 +37,17 @@
         </nav>
     </header>
 
-    <form class="formCadastro">
+    <form action="cadastrarResponse.jsp" class="formCadastro" method="post">
         <h1>Cadastro Cliente</h1>
-        <input type="text" id="nome" placeholder="Nome Completo">
+        <input type="text" id="nome" name="nome" placeholder="Nome Completo">
         <br><br>
-        <input type="text" id="email" placeholder="Email">
+        <input type="email" id="email" name="email" placeholder="Email">
         <br><br>
-        <input type="text" id="cpf" placeholder="CPF">
+        <input type="text" id="cpf" name="cpf" placeholder="CPF">
         <br><br>
-        <input id="date" type="date" />
+        <input id="date" type="date" name="date" />
         <br><br>
-        <input type="password" id="senha" placeholder="Senha">
+        <input type="password" id="senha" name="senha" placeholder="Senha">
         <br><br>
         <input class="btn-cadastrar" type="submit" value="Cadastrar">
         <a href="../index.jsp"><button class="pgn-inicial" type="button" >Voltar para Página Inicial</button></a>

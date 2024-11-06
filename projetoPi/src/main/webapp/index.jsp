@@ -15,7 +15,7 @@
 <header>
         <div class="top-header">
             <div class="logo">
-                <a href="#"><img src="img/Logo pi.png" alt="Logo"></a>
+                <a href="index.jsp"><img src="img/Logo pi.png" alt="Logo"></a>
             </div>
             <div class="barra-pesquisa">
                 <input type="text" placeholder="Pesquisar...">
@@ -24,9 +24,9 @@
 
             <div class="Login">
                 <p>
-                    <a class="logar" href="#">Login</a>
+                    <a class="logar" href="views/login.jsp">Login</a>
                     |
-                    <a class="cadastrar" href="#">Cadastre-se</a>
+                    <a class="cadastrar" href="views/cadastroCliente.jsp">Cadastre-se</a>
                 </p>
             </div>
         </div>
@@ -42,7 +42,7 @@
     
      
 
-    <!-- Slider -->
+    <!-- Carrossel -->
     <div class="slider">
         <input type="radio" name="slide" id="slide1" checked>
         <input type="radio" name="slide" id="slide2">
@@ -69,7 +69,7 @@
 
 
     </div>
-    <!-- Slider -->
+    <!-- Carrossel -->
 
     
     <div class="container-produtos">

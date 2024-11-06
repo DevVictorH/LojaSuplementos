@@ -18,16 +18,19 @@ public class ClienteDao {
 
 		try {
 			conexao = ConnectionFactory.getConexao();
-			String sql = "INSERT INTO clientes (cpf,nome) values(?,?)";
+			String sql = "INSERT INTO clientes (nome, cpf, email, senha) values(?,?,?,?)";
 			PreparedStatement ps = conexao.prepareStatement(sql);
-			ps.setString(1, cliente.getCpf());
-			ps.setString(2, cliente.getNome());
+			ps.setString(1, cliente.getNome());
+			ps.setString(2, cliente.getCpf());
+			ps.setString(3, cliente.getEmail());
+			ps.setString(4, cliente.getSenha());
 			int linhasAfetadas = ps.executeUpdate();
 			if (linhasAfetadas > 0) {
 				retorno = true;
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+			System.out.println("Aqui deu erro em!!!!!!!!!");
 
 		} finally {
 			if (conexao != null) {
@@ -122,34 +125,25 @@ public class ClienteDao {
 		return retorno;
 	}
 
-	public Cliente buscarPorId(int id) { // terminar de fazer
-		try {
-			
-			Cliente clienteAchado = new Cliente();
-			
-			conexao = ConnectionFactory.getConexao();
-			String sql = "SELECT FROM clientes WHERE idCliente = ?";
+	public Cliente buscarPorId(int id) {
+	    Cliente cliente = null;
+	    String sql = "SELECT * FROM Clientes WHERE id = ?";
 
-			PreparedStatement ps = conexao.prepareStatement(sql);
-			ps.setInt(1, id);
-			int linhasAfetadas = ps.executeUpdate();
+	    try (Connection conexao = ConnectionFactory.getConexao();
+	         PreparedStatement preparedStatement = conexao.prepareStatement(sql)) {
+	        preparedStatement.setInt(1, id);
+	        ResultSet rs = preparedStatement.executeQuery();
 
-			if (linhasAfetadas > 0) {
-				return clienteAchado;
-			}
+	        if (rs.next()) {
+	            cliente = new Cliente();
+	            cliente.setId(rs.getInt("id"));
+	            cliente.setCpf(rs.getString("cpf"));
+	            cliente.setNome(rs.getString("nome"));
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
 
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			if (conexao != null) {
-				try {
-					conexao.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-		return null;
+	    return cliente;
 	}
-
 }

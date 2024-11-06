@@ -12,13 +12,19 @@ public class Cliente {
 		
 	}
 
-	public Cliente(String nome, String cpf, String senha, String email, int id) {
+	public Cliente(String nome, String cpf, String senha, String email) {
 		super();
 		this.nome = nome;
 		this.cpf = cpf;
 		this.senha = senha;
 		this.email = email;
-		this.id = id;
+	}
+	
+	
+
+	public Cliente(String cpf, String nome) {
+		this.cpf = cpf;
+		this.nome = nome;
 	}
 
 	public String getNome() {

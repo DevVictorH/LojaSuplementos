@@ -79,7 +79,7 @@ public class ClienteControler extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		String nome = request.getParameter("nome");
 		Cliente clienteAtualizar = new Cliente();
-		clienteAtualizar.setIdCliente(id);
+		clienteAtualizar.setId(id);
 		clienteAtualizar.setNome(nome);
 		clienteDao.atualizar(clienteAtualizar);
 		response.sendRedirect("listar");
