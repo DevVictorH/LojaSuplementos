@@ -13,7 +13,13 @@
 <h1>Response</h1>
 
 <%
-Cliente clienteCriado = new Cliente(request.getParameter("nome"), request.getParameter("cpf"), request.getParameter("email"), request.getParameter("senha"));
+
+String nome = request.getParameter("nome");
+String cpf = request.getParameter("cpf");
+String email = request.getParameter("email");
+String senha = request.getParameter("senha");
+
+Cliente clienteCriado = new Cliente(nome, cpf, email, senha);
 
 ClienteDao dao = new ClienteDao();
 
